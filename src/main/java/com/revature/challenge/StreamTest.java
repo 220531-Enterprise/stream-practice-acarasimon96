@@ -132,8 +132,8 @@ public class StreamTest {
 
         // Code your Solution here
 
-
-
+        List<String> studentNames = studentList.stream().map(Student::getName).collect(Collectors.toList());
+        System.out.println(studentNames);
 
 
         /***************************************************************************
