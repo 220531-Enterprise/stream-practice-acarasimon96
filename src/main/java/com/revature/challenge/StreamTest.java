@@ -87,7 +87,12 @@ public class StreamTest {
         // Code your Solution here
 
 
-
+        List<Student> studentsWith1233And1234 = students.stream()
+            .filter(s -> s.getMobileNumbers()
+                .stream()
+                .allMatch(num -> num.getNumber().equals("1233") || num.getNumber().equals("1234")))
+            .collect(Collectors.toList());
+        studentsWith1233And1234.forEach(s -> System.out.println(s.getName()));
 
 
         /***************************************************************************
