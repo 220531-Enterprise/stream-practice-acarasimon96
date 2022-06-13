@@ -165,7 +165,8 @@ public class StreamTest {
         // Code your Solution here, don't touch the code above
 
 
-
+        List<String> namesListSorted = nameList.stream().sorted().collect(Collectors.toList());
+        namesListSorted.forEach(System.out::println);
 
 
     }
