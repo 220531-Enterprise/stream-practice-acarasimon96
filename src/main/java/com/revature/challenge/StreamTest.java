@@ -151,7 +151,8 @@ public class StreamTest {
         // Code your Solution here, don't touch the code above
 
 
-
+        List<String> nameListUpper = nameList.stream().map(String::toUpperCase).collect(Collectors.toList());
+        nameListUpper.forEach(System.out::println);
 
 
         /****************************************************************************
