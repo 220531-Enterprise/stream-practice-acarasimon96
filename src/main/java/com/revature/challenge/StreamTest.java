@@ -117,8 +117,10 @@ public class StreamTest {
         // Code your Solution here, don't touch the code above
 
 
-
-
+        List<Student> studentList = tmpStudents.stream()
+            .map(s -> new Student(s.name, s.age, s.address, s.mobileNumbers))
+            .collect(Collectors.toList());
+        System.out.println(studentList);
 
 
         /***************************************************************************
